@@ -1,5 +1,26 @@
 {
-  "devDependencies": {
-    "webpack": "^5.74.0"
+    "name": "blog-site",
+    "version": "1.0.0",
+    "description": "",
+    "main": "server.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "start": "node server.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/noellerjd/Blog-Site.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+      "url": "https://github.com/noellerjd/Blog-Site/issues"
+    },
+    "homepage": "https://github.com/noellerjd/Blog-Site#readme",
+    "dependencies": {
+      "express": "^4.18.1",
+      "express-handlebars": "^6.0.6",
+      "nodemon": "^2.0.19",
+      "webpack": "^5.74.0"
+    }
   }
-}
