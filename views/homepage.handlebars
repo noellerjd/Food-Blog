@@ -1,0 +1,61 @@
+<div class='menu-container'>
+  <div class='card-header col-md-10'>
+    <h2>
+      &#127869 YumYums
+    </h2>
+  </div>
+  {{#each dishes as |dish|}}
+    <div class='dish col-md-5'>
+      <p>
+        {{dish.id}}.
+        {{dish.dish_name}}
+      </p>
+    </div>
+    <div class='col-md-7'>
+      <p>
+        Guest:
+        {{dish.guest_name}}
+      </p>
+    </div>
+  {{/each}}
+  <div class='add-dish-container'>
+    <h2>
+      Swipe to see recipes
+    </h2>
+
+    <button class='review-button'> Write a Review</button>
+
+    <form class='review-recipe-form'>
+      <br />
+      <label for='recipe_name'>
+        Recipe name here 
+        {{dish_name}}
+      </label>
+      <br />
+
+      <br />
+      <label for='description'>
+        Review:
+      </label>
+      <br />
+      <textarea id='review' name='review' rows='5' cols='30'>
+        {{review}}
+      </textarea>
+      <br />
+      <label for='guest_name'>
+        Guest Name:
+      </label>
+      <br />
+      <textarea id='guest_name' name='guest_name' rows='2' cols='30'>
+        {{guest_name}}
+      </textarea>
+      <br />
+      <br />
+      <br />
+      <button type='submit' value='Submit'>
+        Submit
+      </button>
+    </form>
+
+  </div>
+</div>
