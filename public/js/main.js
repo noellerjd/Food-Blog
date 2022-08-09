@@ -7,4 +7,4 @@ revButton.onclick = function () {
     } else {
       revButton.style.display = "block";
     }
-  };
+  }

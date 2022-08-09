@@ -27,5 +27,8 @@
     "mysql2": "^2.2.5",
     "nodemon": "^2.0.19",
     "sequelize": "^6.3.5"
+  },
+  "devDependencies": {
+    "handlebars-helper-css": "^0.1.0"
   }
 }
