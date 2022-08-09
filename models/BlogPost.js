@@ -17,14 +17,18 @@ blogPost.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
-    post_description: {
+    title: {
       type: DataTypes.STRING,
       allowNull: false,
     },
-    post_date: {
-      type: DataTypes.DATE,
+    description: {
+      type: DataTypes.STRING,
       allowNull: false,
     },
+    // date: {
+    //   type: DataTypes.DATE,
+    //   allowNull: false,
+    // },
     likes: {
       type: DataTypes.INTEGER,
       allowNull: false,
