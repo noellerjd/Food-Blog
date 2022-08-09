@@ -2,13 +2,10 @@
 *{ 
     background-color: #E1F4CB;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-};
+}
 
 .review-recipe-form {
     display: none; 
     background-color: blueviolet;
-};
+}
 
-h2{
-    font-size: 300px;
-};
