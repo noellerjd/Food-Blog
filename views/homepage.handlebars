@@ -4,20 +4,21 @@
       <img class="food-pic" src="assets/placeholder-pic.jpeg" alt="food" width="300" height="300">
     </h2>
   </div>
-  {{#each dishes as |dish|}}
+  {{#each recipe as |recipes|}}
     <div class='dish col-md-5'>
       <p>
-        {{dish.id}}.
-        {{dish.dish_name}}
+        {{recipe.id}}.
+        {{recipes.recipe_name}}
       </p>
     </div>
     <div class='col-md-7'>
       <p>
-        Guest:
-        {{dish.guest_name}}
+        Description
+        {{recipes.recipe_description}}
       </p>
     </div>
   {{/each}}
+
   <div class='add-dish-container'>
     <h2>
       Swipe to see recipes
@@ -29,7 +30,7 @@
       <br />
       <label for='recipe_name'>
         Recipe name here 
-        {{dish_name}}
+        {{recipe_name}}
       </label>
       <br />
 
@@ -42,12 +43,12 @@
         {{review}}
       </textarea>
       <br />
-      <label for='guest_name'>
-        Guest Name:
+      <label for='user_name'>
+        User Name:
       </label>
       <br />
-      <textarea id='guest_name' name='guest_name' rows='2' cols='30'>
-        {{guest_name}}
+      <textarea id='user_name' name='user_name' rows='2' cols='30'>
+        {{user_name}}
       </textarea>
       <br />
       <br />
