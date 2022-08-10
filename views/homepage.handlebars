@@ -1,30 +1,62 @@
-<div class='menu-container'>
-  <div class='card-header col-md-10'>
-    <h2>
-      <img class="food-pic" src="assets/placeholder-pic.jpeg" alt="food" width="300" height="300">
-    </h2>
+    {{#each recipes as | recipe |}}
+    {{!-- looping each recipe --}}
+<div class="card" style="width: 300px;">
+  <div class="card-divider">
+    
+    
+    {{recipe.recipe_name}}
   </div>
-  {{#each recipe as |recipes|}}
-    <div class='dish col-md-5'>
-      <p>
-        {{recipe.id}}.
-        {{recipes.recipe_name}}
-      </p>
-    </div>
-    <div class='col-md-7'>
-      <p>
-        Description
-        {{recipes.recipe_description}}
-      </p>
-    </div>
-  {{/each}}
+  <img src="assets/placeholder-pic.jpeg">
+  <div class="card-section">
+    <h4>{{recipe.recipe_name}}</h4>
+    <p>I{{recipe.recipe_description}}</p>
+  </div>
 
-  <div class='add-dish-container'>
-    <h2>
-      Swipe to see recipes
-    </h2>
+</div>
+     {{/each}}
 
-    <button class='review-button'> Write a Review</button>
+ <div>
+     <button class="button" type="button" data-toggle="example-dropdown"> Write a Review</button>
+     
+    <div class="dropdown-pane" id="example-dropdown" data-dropdown data-auto-focus="true">
+
+    <form>
+      <br />
+      <label for='recipe_name'>
+        Recipe name here 
+        {{recipe_name}}
+      </label>
+      <br />
+
+      <br />
+      <label for='description'>
+        Review:
+      </label>
+      <br />
+      <textarea id='review' name='review' rows='5' cols='30'>
+        {{review}}
+      </textarea>
+      <br />
+      <label for='user_name'>
+        User Name:
+      </label>
+      <br />
+      <textarea id='user_name' name='user_name' rows='2' cols='30'>
+        {{user_name}}
+      </textarea>
+      <br />
+      <br />
+      <br />
+      <button type='submit' value='Submit'>
+        Submit
+      </button>
+    </form>
+
+  </div>
+
+ </div>    
+
+{{!-- <div class='review-container'>
 
     <form class='review-recipe-form'>
       <br />
@@ -58,5 +90,4 @@
       </button>
     </form>
 
-  </div>
-</div>
+  </div> --}}
