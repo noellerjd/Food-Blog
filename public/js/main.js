@@ -1,10 +1,16 @@
-const revButton = document.getElementsByClassName('review-button');
-const revDiv = document.getElementsByClassName('review-recipe-form');
+$(document).foundation()
+// const revButton = document.getElementsByClassName('dropdown button expanded');
+// const revDiv = document.getElementsByClassName('review-container');
+// console.log(revButton[0])
 
-revButton.onclick = function () {
-    if (revDiv.style.display !== "none") {
-      revDiv.style.display = "none";
-    } else {
-      revButton.style.display = "block";
-    }
-  }
+// revButton[0].onclick = function () {
+//     console.log("clicked")
+//     if (revDiv[0].style.display !== "none") {
+//         console.log( revDiv[0].style.display )
+//         revDiv[0].style.display = "none";
+//     } else {
+//         revDiv[0].style.display = "block";
+//         console.log(revDiv[0].style.display )
+//     }
+// }
+
