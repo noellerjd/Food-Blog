@@ -1,0 +1,17 @@
+[
+    {
+        "id": 1,
+        "recipe_name": "chicki nuggies",
+        "recipe_description": "delicious"
+    },
+    {
+        "id": 2,
+        "recipe_name": "the unborn",
+        "recipe_description": "eggs"
+    },
+    {
+        "id": 3,
+        "recipe_name": "tacocat",
+        "recipe_description": "so many cats so few recipes"
+    }
+]
