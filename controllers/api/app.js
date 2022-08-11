@@ -5,7 +5,7 @@ const router = express.Router();
 
 const reviewInfo = req.body;
 
-function getReview() {
+function postReview() {
   // return the json objects of the review
   router.post("/", async (req, res) => {
     const review = new Review({
