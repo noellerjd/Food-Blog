@@ -6,49 +6,34 @@ const router = express.Router();
 // gets back all the posts
 router.get("/", async (req, res) => {
   try {
-    const posts = await Post.find();
+    const reviews = await Review.findAll({
+      Where: {
+        recipe: req.body.recipe,
+      },
+    });
+    res.status(200).json(reviews);
   } catch (err) {
-    res.json({ message: err });
+    res.status(500).json(err);
   }
 });
 // return the json objects of the review
 router.post("/", async (req, res) => {
-  const reviewInfo = new Review({
-    id: req.body.id,
-    user: req.body.user,
-    body: req.body.body,
-    date: req.body.date,
-    likes: req.body.likes,
-  });
-  console.log(reviewInfo);
-  //  add review to database
-  db.add(reviewInfo).then((review) => {
-    res
-      .status(201)
-      .json({ review })
-      .catch((err) => {
-        res.status(500).json({ err });
-      });
-  });
+  try {
+    const reviewInfo = await Review.create({
+      id: req.body.id,
+      user: req.body.user,
+      body: req.body.body,
+      recipe: req.body.recipe,
+      date: req.body.date,
+      likes: req.body.likes,
+      stars: req.body.stars,
+    });
+    res.status(200).json(reviewInfo);
+    console.log(reviewInfo);
+  } catch (err) {
+    res.status(500).json(err);
+  }
 });
-
-// a way to add posts
-// router.post("/", async (req, res) => {
-//   const post = new Post({
-//     id: req.body.id,
-//     user: req.body.user,
-//     body: req.body.body,
-//     date: req.body.date,
-//     likes: req.body.likes,
-//   });
-
-//   try {
-//     const savedPost = await post.save();
-//     res.json(savedPost);
-//   } catch (err) {
-//     res.json({ message: err });
-//   }
-// });
 
 // start listening to the server
 const port = process.env.PORT || 3000;

@@ -16,12 +16,20 @@ Review.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
+    recipe: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
     date: {
       type: DataTypes.DATE,
       allowNull: false,
     },
     user: {
       type: DataTypes.STRING,
+      allowNull: false,
+    },
+    stars: {
+      type: DataTypes.INTEGER,
       allowNull: false,
     },
     likes: {
