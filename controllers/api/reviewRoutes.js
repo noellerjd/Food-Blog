@@ -35,8 +35,8 @@ router.post("/", async (req, res) => {
   }
 });
 
-// start listening to the server
-const port = process.env.PORT || 3000;
-app.listen(port, () => console.log(`listening on ${port}`));
+// // start listening to the server
+// const port = process.env.PORT || 3000;
+// app.listen(port, () => console.log(`listening on ${port}`));
 
 module.exports = router;
