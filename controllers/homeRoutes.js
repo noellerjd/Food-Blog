@@ -33,3 +33,5 @@ router.get("/:id", async (req, res) => {
   res.render("homepage", { recipe, next, prev });
 });
 module.exports = router;
+
+router.get("/")
