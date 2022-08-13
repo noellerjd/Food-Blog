@@ -21,6 +21,11 @@ function saveReview(event) {
   }
 }
 
+
+function displayReviews(){
+    post.
+}
+
 // ------------------------------------------
 //   .then((response) => response.json())
 //   .then((data) => console.log(data));
