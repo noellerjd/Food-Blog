@@ -1,5 +1,5 @@
 <div class="grid-x grid-padding-x align-center">
-    
+
 {{!-- recipes cards --}}
 <div class="card" style="max-width: 500px;">
 
@@ -15,8 +15,10 @@
 
   </div>
   
- <img src="https://i.postimg.cc/f3RZcbWt/Screen-Shot-2022-08-12-at-2-50-13-PM.png" />
- {{!-- <img src={{recipe.image}} /> --}}
+ {{!-- <img src="https://i.postimg.cc/f3RZcbWt/Screen-Shot-2022-08-12-at-2-50-13-PM.png" /> --}}
+ <img src={{recipe.image}} />
+
+ <p>{{User.name}}</p>
 
 {{!-- accordion for recipe, reviews, and review form --}}
 <ul class="accordion" data-accordion data-allow-all-closed="true">
@@ -46,17 +48,18 @@
 <a href="#" class="accordion-title">See Reviews</a>
 
 <div class="accordion-content" data-tab-content>
-  <div class="card-section">
+  <div id= "displayReview" class="card-section">
     reviews here!!
   </div>
 </div>
 
 {{!-- review form section --}}
+{{#if loggedIn}}
 <li class="accordion-item" data-accordion-item>
 
 <a href="#" class="accordion-title">Write a Review</a>
 
-<div class="accordion-content" data-tab-content>
+<div id="reviewBox" class="accordion-content" data-tab-content>
   <div class="card-section">
     <form>
       <br />
@@ -64,7 +67,6 @@
         What did you think of {{recipe.recipe_name}}?
       </label>
       <br />
-
       <br />
       <label for='description'>
         Review:
@@ -84,13 +86,13 @@
       <br />
       <br />
       <br />
-      <button type='submit' value='Submit'>
+      <button class='button' type='submit' value='Submit'>
         Submit
       </button>
     </form>
   </div>
 </div>
-
+{{/if}}
 </ul>
 
 </div>
