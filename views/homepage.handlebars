@@ -1,30 +1,67 @@
-    {{#each recipes as | recipe |}}
-    {{!-- looping each recipe --}}
-<div class="card" style="width: 300px;">
+<div class="grid-x grid-padding-x align-center">
+    
+{{!-- recipes cards --}}
+<div class="card" style="max-width: 500px;">
+
+{{!-- buttons flipping through recipes --}}
+<div class="expanded button-group" style="max-width: 500px;">
+  <a href="/{{prev}}" class="button"><</a>
+  <a href="/{{next}}" class="button">></a>
+</div>
+
   <div class="card-divider">
     
-    
     {{recipe.recipe_name}}
+
   </div>
-  <img src="assets/placeholder-pic.jpeg">
+  
+ <img src="https://i.postimg.cc/f3RZcbWt/Screen-Shot-2022-08-12-at-2-50-13-PM.png" />
+ {{!-- <img src={{recipe.image}} /> --}}
+
+{{!-- accordion for recipe, reviews, and review form --}}
+<ul class="accordion" data-accordion data-allow-all-closed="true">
+
+{{!-- recipe section --}}
+<li class="accordion-item" data-accordion-item>
+
+<a href="#" class="accordion-title">See Recipe</a>
+
+<div class="accordion-content" data-tab-content>
   <div class="card-section">
-    <h4>{{recipe.recipe_name}}</h4>
-    <p>I{{recipe.recipe_description}}</p>
+    <h3>{{recipe.recipe_name}}</h3>
+    <br>
+    <h4>Ingredients:</h4>
+    <p>{{recipe.ingredients}}</p>
+    <br>
+    <h4>Directions:</h4>
+    <p>{{recipe.recipe_description}}</p>
+    <br>
+    <h4>Enjoy!</h4>
   </div>
-
 </div>
-     {{/each}}
 
- <div>
-     <button class="button" type="button" data-toggle="example-dropdown"> Write a Review</button>
-     
-    <div class="dropdown-pane" id="example-dropdown" data-dropdown data-auto-focus="true">
+{{!-- reviews section --}}
+<li class="accordion-item" data-accordion-item>
 
+<a href="#" class="accordion-title">See Reviews</a>
+
+<div class="accordion-content" data-tab-content>
+  <div class="card-section">
+    reviews here!!
+  </div>
+</div>
+
+{{!-- review form section --}}
+<li class="accordion-item" data-accordion-item>
+
+<a href="#" class="accordion-title">Write a Review</a>
+
+<div class="accordion-content" data-tab-content>
+  <div class="card-section">
     <form>
       <br />
       <label for='recipe_name'>
-        Recipe name here 
-        {{recipe_name}}
+        What did you think of {{recipe.recipe_name}}?
       </label>
       <br />
 
@@ -51,43 +88,13 @@
         Submit
       </button>
     </form>
-
   </div>
+</div>
 
- </div>    
+</ul>
 
-{{!-- <div class='review-container'>
+</div>
+    
+</div>   
+</div> 
 
-    <form class='review-recipe-form'>
-      <br />
-      <label for='recipe_name'>
-        Recipe name here 
-        {{recipe_name}}
-      </label>
-      <br />
-
-      <br />
-      <label for='description'>
-        Review:
-      </label>
-      <br />
-      <textarea id='review' name='review' rows='5' cols='30'>
-        {{review}}
-      </textarea>
-      <br />
-      <label for='user_name'>
-        User Name:
-      </label>
-      <br />
-      <textarea id='user_name' name='user_name' rows='2' cols='30'>
-        {{user_name}}
-      </textarea>
-      <br />
-      <br />
-      <br />
-      <button type='submit' value='Submit'>
-        Submit
-      </button>
-    </form>
-
-  </div> --}}
