@@ -1,11 +1,10 @@
-// Fair Warning: I'm not sure if this correctly fits into the project the way I think it does
-
+// i'm like 90% sure that we need this
 const { Model, DataTypes } = require("sequelize");
 const sequelize = require("../config/connection");
 
-class BlogPost extends model {}
+class Review extends Model {}
 
-blogPost.init(
+Review.init(
   {
     id: {
       type: DataTypes.INTEGER,
@@ -13,22 +12,26 @@ blogPost.init(
       primaryKey: true,
       autoIncrement: true,
     },
+    body: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
+    recipe: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
+    date: {
+      type: DataTypes.DATE,
+      allowNull: false,
+    },
     user: {
       type: DataTypes.STRING,
       allowNull: false,
     },
-    title: {
-      type: DataTypes.STRING,
+    stars: {
+      type: DataTypes.INTEGER,
       allowNull: false,
     },
-    description: {
-      type: DataTypes.STRING,
-      allowNull: false,
-    },
-    // date: {
-    //   type: DataTypes.DATE,
-    //   allowNull: false,
-    // },
     likes: {
       type: DataTypes.INTEGER,
       allowNull: false,
@@ -36,10 +39,10 @@ blogPost.init(
   },
   {
     sequelize,
+    timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: "blogPost",
   }
 );
 
-module.exports = BlogPost;
+module.exports = Review;

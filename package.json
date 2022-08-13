@@ -26,7 +26,9 @@
     "express-session": "^1.17.1",
     "mysql2": "^2.2.5",
     "nodemon": "^2.0.19",
-    "sequelize": "^6.3.5"
+    "sequelize": "^6.3.5",
+    "webpack": "^5.74.0",
+    "zen2": "^1.4.2"
   },
   "devDependencies": {
     "handlebars-helper-css": "^0.1.0"

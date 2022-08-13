@@ -1,45 +1,33 @@
 [
-    {
-        "id": 1,
-        "image":"",
-        "recipe_name": "Baked Chicken Meatballs",
-        "ingredients": "1 pound ground chicken or turkey, 1 egg, 1/2 cup panko breadcrumbs, 1/2 cup grated Parmesan, 2 tablespoons olive oil (optional - makes meatballs more moist and yummy), 1/2 teaspoon garlic powder, 1/2 teaspoon onion powder, 1/2 teaspoon salt, black pepper to taste, additional seasonings optional!",
-        "recipe_description": "Preheat the oven to 400 degrees. Line a baking sheet with foil and a little cooking spray.Mix all the ingredients together in a mixing bowl. Roll the mixture into about 30 small balls. Place on baking sheet.Bake for 25-30 minutes."
-    },
-    {
-        "id": 2,
-        "recipe_name": "Tuna Macaroni Salad",
-        "ingredients": "1 (12 ounce) package elbow macaroni, 1 cup mayonnaise, 2 tablespoons sweet pickle relish, salt and pepper to taste, 3 large hard-cooked eggs, 1 pinch paprika for garnish",
-        "recipe_description": "Bring a large pot of lightly salted water to a boil. Cook elbow macaroni in boiling water, stirring occasionally, until tender yet firm to the bite, about 8 minutes. Drain and rinse under cold running water. Stir together macaroni, tuna, celery, onion, and peas in a large bowl. Mix in mayonnaise, relish, salt, and pepper. Garnish with egg wedges and a sprinkle of paprika. Cover and chill for at least 1 hour before serving."
-    },
-    {
-        "id": 3,
-        "recipe_name": "Marinated Flank Steak",
-        "ingredients": "Marinade: ½ cup vegetable oil, ⅓ cup low-sodium soy sauce, ¼ cup red wine vinegar, 2 tablespoons fresh lemon juice, 1 ½ tablespoons Worcestershire sauce, 1 tablespoon Dijon mustard, 2 cloves garlic, minced, ½ teaspoon ground black pepper. Steak: 1 (1 1/2-pound) flank steak",
-        "recipe_description": "Whisk together oil, soy sauce, vinegar, lemon juice, Worcestershire sauce, Dijon mustard, garlic, and pepper for marinade in a 9x13-inch glass baking dish until thoroughly combined. Add flank steak to the baking dish; turn several times to coat thoroughly with marinade. Cover, and refrigerate for 2 to 6 hours, or up to 12 hours if you have time. When ready to cook, preheat an outdoor grill for medium-high heat and lightly oil the grate. Remove steak from the marinade and shake off excess. Discard the remaining marinade. Cook steak on the preheated grill for about 5 minutes per side, or to desired doneness. Remove from the grill and let rest for 5 minutes before slicing and serving."
-    },
-    {
-        "id": 4,
-        "recipe_name": "Reuben Sandwich",
-        "ingredients": "2 tablespoons butter, 8 slices rye bread, 8 slices deli sliced corned beef, 8 slices Swiss cheese, 1 cup sauerkraut, drained, ½ cup Thousand Island dressing.",
-        "recipe_description": "Preheat a large skillet or griddle on medium heat. Lightly butter one side of bread slices. Spread non-buttered sides with Thousand Island dressing. On 4 bread slices, layer 1 slice Swiss cheese, 2 slices corned beef, 1/4 cup sauerkraut and second slice of Swiss cheese. Top with remaining bread slices, buttered sides out. Grill sandwiches until both sides are golden brown, about 5 minutes per side. Serve hot."
-    },
-    {
-        "id": 5,
-        "recipe_name": "Southwest Breakfast Burritos",
-        "ingredients": "12 eggs, ⅔ cup milk, ½ teaspoon salt,2 tablespoons butter, 1 pound bulk pork sausage, 2 tablespoons minced garlic, ½ red onion, 1 tomato, ¼ cup chopped fresh cilantro, 1 (3.5 ounce) can diced jalapenos (Optional), 1 (1 ounce) package taco seasoning, 1 ½ cups shredded Cheddar cheese, 20 (6 inch) flour tortillas",
-        "recipe_description": "Whisk together the eggs, milk, and salt in a large bowl. Heat butter in a large skillet over medium-high heat. Pour in the egg mixture; cook and stir until eggs are completely set, about 5 minutes. Chop the cooked eggs and place in a large bowl. Set aside. Heat a large skillet over medium heat and stir in the sausage and garlic. Cook and stir for 5 minutes, then add the onion. Continue cooking and stirring until the sausage is crumbly, evenly browned, and no longer pink. Drain and discard any excess grease. Combine the sausage with the eggs, tomato, cilantro, jalapeno, and taco seasoning. Allow mixture to cool to room temperature, then stir in the Cheddar cheese.Place a tortilla onto your work surface, then spoon some of the filling halfway between the bottom edge and the center of the tortilla. Flatten the filling into rectangle shape with the back of a spoon. Fold the bottom of the tortilla snugly over the filling, then fold in the left and right edges. Roll the burrito up to the top edge, forming a tight cylinder. Repeat with the remaining ingredients.Tightly wrap individual burritos with plastic wrap and freeze until ready to serve. Heat in the microwave until hot, 3 to 4 minutes, before serving."
-    },
-    {
-        "id": 6,
-        "recipe_name": "Feta Cheese Turkey Burgers",
-        "ingredients": "1 pound ground turkey, 1 cup crumbled feta cheese, ½ cup kalamata olives, pitted and sliced, 2 teaspoons dried oregano, ground black pepper to taste.",
-        "recipe_description": "Preheat the grill for medium high heat. In a large bowl, combine turkey, feta cheese, olives, oregano, and pepper. Mix together, and form into patties. Lightly oil the grate. Place patties on the grill. Cook for 10 to 12 minutes, turning halfway through."
-    },
-    {
-        "id": 7,
-        "recipe_name": "Hot or Cold Vegetable Frittata",
-        "ingredients": "3 tablespoons vegetable oil, 1 ½ cups chopped zucchini, 1 ½ cups chopped fresh mushrooms, ¾ cup chopped onion, ¾ cup chopped green bell pepper, 1 clove garlic, minced, 6 eggs, beaten, ¼ cup half-and-half cream, 2 (8 ounce) packages cream cheese, diced, 2 cups shredded Cheddar cheese, 4 slices whole wheat bread, cubed, 1 teaspoon salt, ¼ teaspoon ground black pepper.",
-        "recipe_description": "Preheat oven to 350 degrees F (175 degrees C). Lightly grease a 9x13 inch baking dish. In a large skillet or frying pan, heat oil over medium high heat. Add zucchini, mushrooms, onion, green pepper and garlic; saute until tender. Remove from heat and let cool slightly. In a large bowl, beat together the eggs and cream. Stir in cream cheese, cheddar cheese, bread cubes and sauteed vegetables. Season with salt and pepper. Mix well and pour into prepared baking dish. Bake in preheated oven for one hour, or until center is set. Serve hot or cold."
-    }
+  {
+    "id": 1,
+    "image": "https://i.postimg.cc/FKjRQf2Z/Screen-Shot-2022-08-12-at-2-50-13-PM.png",
+    "recipe_name": "Baked Chicken Meatballs",
+    "ingredients": "1 pound ground chicken or turkey, 1 egg, 1/2 cup panko breadcrumbs, 1/2 cup grated Parmesan, 2 tablespoons olive oil (optional - makes meatballs more moist and yummy), 1/2 teaspoon garlic powder, 1/2 teaspoon onion powder, 1/2 teaspoon salt, black pepper to taste, additional seasonings optional!",
+    "recipe_description": "Preheat the oven to 400 degrees. Line a baking sheet with foil and a little cooking spray.Mix all the ingredients together in a mixing bowl. Roll the mixture into about 30 small balls. Place on baking sheet.Bake for 25-30 minutes."
+  },
+  {
+    "id": 2,
+    "recipe_name": "Tuna Macaroni Salad",
+    "ingredients": "1 (12 ounce) package elbow macaroni, 1 cup mayonnaise, 2 tablespoons sweet pickle relish, salt and pepper to taste, 3 large hard-cooked eggs, 1 pinch paprika for garnish",
+    "recipe_description": "Bring a large pot of lightly salted water to a boil. Cook elbow macaroni in boiling water, stirring occasionally, until tender yet firm to the bite, about 8 minutes. Drain and rinse under cold running water. Stir together macaroni, tuna, celery, onion, and peas in a large bowl. Mix in mayonnaise, relish, salt, and pepper. Garnish with egg wedges and a sprinkle of paprika. Cover and chill for at least 1 hour before serving."
+  },
+  {
+    "id": 3,
+    "recipe_name": "Marinated Flank Steak",
+    "ingredients": "Marinade: ½ cup vegetable oil, ⅓ cup low-sodium soy sauce, ¼ cup red wine vinegar, 2 tablespoons fresh lemon juice, 1 ½ tablespoons Worcestershire sauce, 1 tablespoon Dijon mustard, 2 cloves garlic, minced, ½ teaspoon ground black pepper. Steak: 1 (1 1/2-pound) flank steak",
+    "recipe_description": "Whisk together oil, soy sauce, vinegar, lemon juice, Worcestershire sauce, Dijon mustard, garlic, and pepper for marinade in a 9x13-inch glass baking dish until thoroughly combined. Add flank steak to the baking dish; turn several times to coat thoroughly with marinade. Cover, and refrigerate for 2 to 6 hours, or up to 12 hours if you have time. When ready to cook, preheat an outdoor grill for medium-high heat and lightly oil the grate. Remove steak from the marinade and shake off excess. Discard the remaining marinade. Cook steak on the preheated grill for about 5 minutes per side, or to desired doneness. Remove from the grill and let rest for 5 minutes before slicing and serving."
+  },
+  {
+    "id": 4,
+    "recipe_name": "Reuben Sandwich",
+    "ingredients": "2 tablespoons butter, 8 slices rye bread,",
+    "recipe_description": "Whisk together oil, soy sauce, vinegar, lemon juice, Worcestershire sauce, Dijon mustard, garlic, and pepper for marinade in a 9x13-inch glass baking dish until thoroughly combined. Add flank steak to the baking dish; turn several times to coat thoroughly with marinade. Cover, and refrigerate for 2 to 6 hours, or up to 12 hours if you have time. When ready to cook, preheat an outdoor grill for medium-high heat and lightly oil the grate. Remove steak from the marinade and shake off excess. Discard the remaining marinade. Cook steak on the preheated grill for about 5 minutes per side, or to desired doneness. Remove from the grill and let rest for 5 minutes before slicing and serving."
+  },
+  {
+    "id": 5,
+    "recipe_name": "Marinated Flank Steak",
+    "ingredients": "Marinade: ½ cup vegetable oil, ⅓ cup low-sodium soy sauce, ¼ cup red wine vinegar, 2 tablespoons fresh lemon juice, 1 ½ tablespoons Worcestershire sauce, 1 tablespoon Dijon mustard, 2 cloves garlic, minced, ½ teaspoon ground black pepper. Steak: 1 (1 1/2-pound) flank steak",
+    "recipe_description": "Whisk together oil, soy sauce, vinegar, lemon juice, Worcestershire sauce, Dijon mustard, garlic, and pepper for marinade in a 9x13-inch glass baking dish until thoroughly combined. Add flank steak to the baking dish; turn several times to coat thoroughly with marinade. Cover, and refrigerate for 2 to 6 hours, or up to 12 hours if you have time. When ready to cook, preheat an outdoor grill for medium-high heat and lightly oil the grate. Remove steak from the marinade and shake off excess. Discard the remaining marinade. Cook steak on the preheated grill for about 5 minutes per side, or to desired doneness. Remove from the grill and let rest for 5 minutes before slicing and serving."
+  }
 ]
