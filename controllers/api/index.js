@@ -1,9 +1,10 @@
 // Establishes router to use the .router() portion from express
 const router = require("express").Router();
+// Establises the obj userRoutes to require the userRoutes.js
+const userRoutes = require("./userRoutes");
 
-const reviewRoutes = require("./reviewRoutes");
-
-router.use("/reviewRoutes", reviewRoutes);
+// not completely sure yet
+router.use("/users", userRoutes);
 
 // exports the router module
 module.exports = router;
