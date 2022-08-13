@@ -1,9 +1,37 @@
-
-*{ 
-    background-color: #E1F4CB;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+:root {
+  --darkgreen: #50723c;
+  --charcoal: #2e4052;
+  --lightgreen: #e1f4cb;
+  --purple: #38023b;
 }
 
+* {
+  background-color: #e1f4cb;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: var(--darkgreen);
+}
+.title {
+  align-items: center;
+  justify-content: center;
+  background-color: var(--darkgreen);
+  top: 50%;
+  text-align: center;
+  margin: auto;
+  transition: all 0.3ms ease;
+}
+.login {
+  font-size: large;
+}
+.login:hover {
+  color: var(--lightgreen);
+}
 
 /* .review-container {
     display: none; 
