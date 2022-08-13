@@ -1,5 +1,5 @@
 const router = require("express").Router();
-const recipes = require("../utils/test.json")
+const recipes = require("../utils/recipes.json")
 
 
 
