@@ -27,8 +27,7 @@
     "mysql2": "^2.2.5",
     "nodemon": "^2.0.19",
     "sequelize": "^6.3.5",
-    "webpack": "^5.74.0",
-    "zen2": "^1.4.2"
+    "webpack": "^5.74.0"
   },
   "devDependencies": {
     "handlebars-helper-css": "^0.1.0"

@@ -2,47 +2,31 @@
 const { Model, DataTypes } = require("sequelize");
 const sequelize = require("../config/connection");
 
-class Review extends Model {}
+class Review extends model {}
 
-Review.init(
-  {
-    id: {
-      type: DataTypes.INTEGER,
-      allowNull: false,
-      primaryKey: true,
-      autoIncrement: true,
-    },
-    body: {
-      type: DataTypes.STRING,
-      allowNull: false,
-    },
-    // recipe: {
-    //   type: DataTypes.STRING,
-    //   allowNull: false,
-    // },
-    // date: {
-    //   type: DataTypes.DATE,
-    //   allowNull: false,
-    // },
-    // user: {
-    //   type: DataTypes.STRING,
-    //   allowNull: false,
-    // },
-    // stars: {
-    //   type: DataTypes.INTEGER,
-    //   allowNull: false,
-    // },
-    // likes: {
-    //   type: DataTypes.INTEGER,
-    //   allowNull: false,
-    // },
+Review.init({
+  id: {
+    type: DataTypes.INTEGER,
+    allowNull: false,
+    primaryKey: true,
+    autoIncrement: true,
   },
-  {
-    sequelize,
-    timestamps: false,
-    freezeTableName: true,
-    underscored: true,
-  }
-);
+  body: {
+    type: DataTypes.STRING,
+    allowNull: false,
+  },
+  date: {
+    type: DataTypes.DATE,
+    allowNull: false,
+  },
+  user: {
+    type: DataTypes.STRING,
+    allowNull: false,
+  },
+  likes: {
+    type: DataTypes.INTEGER,
+    allowNull: false,
+  },
+});
 
 module.exports = Review;
