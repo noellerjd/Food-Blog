@@ -1,38 +1,72 @@
-<div class='menu-container'>
-  <div class='card-header col-md-10'>
-    <h2>
-      &#127869 YumYums
-    </h2>
+<div class="grid-x grid-padding-x align-center">
+
+{{!-- recipes cards --}}
+<div class="card" style="max-width: 500px;">
+
+{{!-- buttons flipping through recipes --}}
+<div class="expanded button-group" style="max-width: 500px;">
+  <a href="/{{prev}}" class="button"><</a>
+  <a href="/{{next}}" class="button">></a>
+</div>
+
+  <div class="card-divider">
+    
+    {{recipe.recipe_name}}
+
   </div>
-  {{#each dishes as |dish|}}
-    <div class='dish col-md-5'>
-      <p>
-        {{dish.id}}.
-        {{dish.dish_name}}
-      </p>
-    </div>
-    <div class='col-md-7'>
-      <p>
-        Guest:
-        {{dish.guest_name}}
-      </p>
-    </div>
-  {{/each}}
-  <div class='add-dish-container'>
-    <h2>
-      Swipe to see recipes
-    </h2>
+  
+ {{!-- <img src="https://i.postimg.cc/f3RZcbWt/Screen-Shot-2022-08-12-at-2-50-13-PM.png" /> --}}
+ <img src={{recipe.image}} />
 
-    <button class='review-button'> Write a Review</button>
+ <p>{{User.name}}</p>
 
-    <form class='review-recipe-form'>
+{{!-- accordion for recipe, reviews, and review form --}}
+<ul class="accordion" data-accordion data-allow-all-closed="true">
+
+{{!-- recipe section --}}
+<li class="accordion-item" data-accordion-item>
+
+<a href="#" class="accordion-title">See Recipe</a>
+
+<div class="accordion-content" data-tab-content>
+  <div class="card-section">
+    <h3>{{recipe.recipe_name}}</h3>
+    <br>
+    <h4>Ingredients:</h4>
+    <p>{{recipe.ingredients}}</p>
+    <br>
+    <h4>Directions:</h4>
+    <p>{{recipe.recipe_description}}</p>
+    <br>
+    <h4>Enjoy!</h4>
+  </div>
+</div>
+
+{{!-- reviews section --}}
+<li class="accordion-item" data-accordion-item>
+
+<a href="#" class="accordion-title">See Reviews</a>
+
+<div class="accordion-content" data-tab-content>
+  <div id= "displayReview" class="card-section">
+    reviews here!!
+  </div>
+</div>
+
+{{!-- review form section --}}
+{{#if loggedIn}}
+<li class="accordion-item" data-accordion-item>
+
+<a href="#" class="accordion-title">Write a Review</a>
+
+<div id="reviewBox" class="accordion-content" data-tab-content>
+  <div class="card-section">
+    <form>
       <br />
       <label for='recipe_name'>
-        Recipe name here 
-        {{dish_name}}
+        What did you think of {{recipe.recipe_name}}?
       </label>
       <br />
-
       <br />
       <label for='description'>
         Review:
@@ -42,20 +76,26 @@
         {{review}}
       </textarea>
       <br />
-      <label for='guest_name'>
-        Guest Name:
+      <label for='user_name'>
+        User Name:
       </label>
       <br />
-      <textarea id='guest_name' name='guest_name' rows='2' cols='30'>
-        {{guest_name}}
+      <textarea id='user_name' name='user_name' rows='2' cols='30'>
+        {{user_name}}
       </textarea>
       <br />
       <br />
       <br />
-      <button type='submit' value='Submit'>
+      <button class='button' type='submit' value='Submit'>
         Submit
       </button>
     </form>
-
   </div>
 </div>
+{{/if}}
+</ul>
+
+</div>
+    
+</div>   
+</div> 
