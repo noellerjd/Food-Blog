@@ -16,7 +16,7 @@
   </div>
   
  {{!-- <img src="https://i.postimg.cc/f3RZcbWt/Screen-Shot-2022-08-12-at-2-50-13-PM.png" /> --}}
- <img src={{recipe.image}} style="width: 500px; height: 500px"/>
+ <img src={{recipe.image}} />
 
  <p>{{User.name}}</p>
 
@@ -48,7 +48,7 @@
 <a href="#" class="accordion-title">See Reviews</a>
 
 <div class="accordion-content" data-tab-content>
-  <div class="card-section">
+  <div id= "displayReview" class="card-section">
     reviews here!!
   </div>
 </div>
@@ -58,7 +58,7 @@
 
 <a href="#" class="accordion-title">Write a Review</a>
 
-<div class="accordion-content" data-tab-content>
+<div id="reviewBox" class="accordion-content" data-tab-content>
   <div class="card-section">
     <form>
       <br />
