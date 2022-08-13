@@ -7,6 +7,7 @@ function saveReview(event) {
   event.preventDefault();
   const reviewBody = document.getElementById("review");
   console.log(review.value);
+
   if (reviewBody) {
     const requestOptions = {
       method: "POST",
