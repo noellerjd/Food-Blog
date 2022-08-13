@@ -54,6 +54,7 @@
 </div>
 
 {{!-- review form section --}}
+{{#if loggedIn}}
 <li class="accordion-item" data-accordion-item>
 
 <a href="#" class="accordion-title">Write a Review</a>
@@ -66,7 +67,6 @@
         What did you think of {{recipe.recipe_name}}?
       </label>
       <br />
-
       <br />
       <label for='description'>
         Review:
@@ -92,7 +92,7 @@
     </form>
   </div>
 </div>
-
+{{/if}}
 </ul>
 
 </div>
